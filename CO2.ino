@@ -109,6 +109,7 @@ void sendTemps() {
       // Turn off display light
       digitalWrite(displayLight, LOW);
     }
+    // Display tempereture, humidity & PPM.
     digitalWrite(led, LOW);
     lcd.clear();
     lcd.setCursor(0, 0);
@@ -124,7 +125,7 @@ void sendTemps() {
 }
 
 void loop() {
-  // Turn on display light by sensor button
+  // Turn on display light by sensor button :)
   if (digitalRead(buttonPin)) {
     digitalWrite(displayLight, HIGH);
     delay(3000);
