@@ -55,7 +55,7 @@ void setup() {
   lcd.setCursor(0, 0);
   lcd.print("Welcome to Game");
   lcd.setCursor(0, 1);
-  lcd.print("Ventilate Or DIY");
+  lcd.print("Ventilate Or Die");
   delay(5000);
   lcd.clear();
   timer.setInterval(5000L, sendTemps);
